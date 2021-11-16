@@ -39,10 +39,12 @@
   
    <p align="justify" style="font-family:roboto;"> O projeto por fim trás uma facilidade muito grande para seus usuários, além da solicitação rápida e intuitiva de um evento, é possível ter uma segurança através da sua aprovação por meio do administrador, além disso, a confirmação do evento via e-mail para os convidados trás uma grande facilidade na comunicação.</p>
 
+ ...
   
   <h2 style="font-family:roboto;"> Tecnologias Adotadas :computer:</h2>
    
   * [Java](https://www.java.com/pt_BR/)
+<p align="justify" style="font-family:roboto;"> O projeto por fim trás uma facilidade muito grande para seus usuários, além da solicitação rápida e intuitiva de um evento, é possível ter uma segurança através da sua aprovação por meio do administrador, além disso, a confirmação do evento via e-mail para os convidados trás uma grande facilidade na comunicação.</p>
   * [Spring Boot](https://spring.io/)
   * [JavaScript](https://www.javascript.com/)
   * [Angular](https://angular.io/)
