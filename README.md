@@ -206,9 +206,9 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
   <details>
   <summary>Arquivo changeset</summary>
   <br>
-   <img style="border-radius: 50%;" src=https://github.com/ferrazghs/Vempracasa/blob/main/images/changeset1.jpg" width="1000px;" alt=""/>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/changeset1.jpg" width="1000px;" alt=""/>
       <br>
-   <img style="border-radius: 50%;" src=https://github.com/ferrazghs/Vempracasa/blob/main/images/changeset2.jpg" width="1000px;" alt=""/>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/changeset2.jpg" width="1000px;" alt=""/>
   </details>
    <h3>Implementação ORM utilizando o framework Hibernate </h3>
    <p align="justify" style="font-family:roboto;">O Hibernate é a solução ORM Java que consiste em uma ferramenta utilizada para realizar o mapeamento objeto-relacional de forma completa e eficiente, essa tecnologia segue a especificação JPA que define um meio para realizar esse mapeamento. O hibernate é o intermediário das interações entre os objetos do aplicativo com o banco de dados relacional, fazendo assim a conversão da programação orientada a objetos para o banco de dados.</p>
@@ -220,13 +220,13 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
   <p align="justify" style="font-family:roboto;">
 O mapeamento das classes é construído através de algumas tags especificas do Hibernate, através desses dois exemplos acima conseguimos identificar tags chaves para o mapeamento, são elas:
     <br>
-•	@Table – Notação para especificar qual o nome da tabela no banco de dados.
+	@Table – Notação para especificar qual o nome da tabela no banco de dados.
     <br>
-•	@Column – Identifica o nome da coluna 
+	@Column – Identifica o nome da coluna 
     <br>
-•	@Id – Identifica a “primary key”, ou seja, a coluna identificadora da tabela
+	@Id – Identifica a “primary key”, ou seja, a coluna identificadora da tabela
     <br>
-•	@SequenceGenerator – Cria uma sequencia de números no banco de dados
+	@SequenceGenerator – Cria uma sequencia de números no banco de dados
     <br>
 </p>
   <details>
