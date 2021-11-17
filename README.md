@@ -82,17 +82,36 @@
   <details>
   <summary>Demonstração modelo relacional</summary>
   <br>
-   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/relacional.jpg" width="800px;" alt=""/>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/relacional.jpg" width="'1000px;" alt=""/>
   </details>
   
-  <p align="justify" style="font-family:roboto;"> Com isso finalizado e versionado no GitHub, decidimos qual seria a Arquitetura a se empregar com o Spring Boot e chegamos no seguinte resultado:</p>
-  <details>
-  <summary>Lógica Arquitetural</summary>
-  <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/DiagramaArq.png" width="800px;" alt=""/>
-  </details>
+  <h3> Documentação de dados</h3>
+  <p align="justify" style="font-family:roboto;">Após o desenvolvimento do modelo relacional pela ferramenta foi gerada uma documentação de dados através de um arquivo pdf, essa documentação foi entregue ao cliente, e descreve todas tabelas, colunas e relacionamento que o banco de dados possui, caso seja necessário algumas atualização na estrutura do código SQL o cliente consegue de forma fácil e rápida ter acesso a estrutura atual.</p>
   
-  <p align="justify" style="font-family:roboto;"> As Models são representações das tabelas do Banco de Dados Oracle, tendo seus campos e relações mapeadas pelo Hibernate. Resultando em uma melhor validação dos dados e facilitação com consultas, inserções e atualizações na Database.</p>
+   <h3>Estruturação do banco de dados </h3>
+  <p align="justify" style="font-family:roboto;">Após a finalização dos modelos, foi feito a estruturação do banco de dados através do modelo relacional para linguagem SQL no banco de dados Oracle utilizando comando DML.</p>
+  <p align="justify" style="font-family:roboto;Os códigos SQL abaixo são alguns exemplos  de códigos SQL que foram desenvolvidos durante a estruturação do banco de dados.</p>
+ 
+  <p align="justify" style="font-family:roboto;">"Comando DML para criar algumas tabelas no banco de dados, atribuindo suas colunas e especificando as restrições de integridade conforme o modelo relacional</p>
+   
+  <p align="justify" style="font-family:roboto;">"
+    Linha 1 (comando DML para criação de tabela)
+CREATE TABLE Evento 
+Linha 2 (atribuindo a coluna uma chave primaria e denominando um nome a sua constraint)
+    evt_id Integer CONSTRAINT pk_evento PRIMARY KEY,
+Linha 3 (atribuindo a coluna uma restrição que não aceita valores nulos)
+    evt_titulo Varchar2(30)  NOT NULL,
+    evt_descricao Varchar2(80),
+    evt_data_inicio Varchar2(100)NOT NULL,
+    evt_data_fim Varchar2(100) NOT NULL,
+    evt_tipo Varchar2(10) NOT NULL,
+Linha 9 (imputando uma valor default NULL, caso não seja inserido nenhum valor na coluna)
+    evt_status Integer DEFAULT NULL,
+    evt_imagem Varchar2(200),
+    usu_email Varchar2(80)
+) ;
+</p>
+  
   <details>
   <summary>Entidade Model</summary>
   <br>
