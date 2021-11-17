@@ -15,7 +15,7 @@
   <h2> Autor :necktie: </h2>
   <table align="center">
    <tr>
-    <td align="center"><a href="https://www.linkedin.com/in/gabrielferraz01/">" alt=""/><br/><b>Gabriel Ferraz</b></a>
+    <td align="center"><a href="https://www.linkedin.com/in/gabrielferraz01/">" <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/ferraz.jpeg" width="200px;" alt=""/><br/><b>Gabriel Ferraz</b></a>
       <br/>
        Developer
      </td>
