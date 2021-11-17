@@ -237,7 +237,7 @@ O mapeamento das classes é construído através de algumas tags especificas do 
   </details>-
   <p align="justify" style="font-family:roboto;">Além das anotações citadas, é possível adicionar características especificas a determinada coluna. Ex:</p>	
 	
-     <p align="justify" style="font-family:roboto;"<b>"@Column(name = "evt_titulo", nullable = false, length = 30)"</p> 
+     <p align="justify" style="font-family:roboto;">@Column(name = "evt_titulo", nullable = false, length = 30)"</p> 
 	  
 	 <p align="justify" style="font-family:roboto;">No trecho de código foi possível determinar o tamanho de caracteres a coluna aceita e também estabelecer que a coluna não aceita valores nulos.</p>
 		 
