@@ -258,18 +258,25 @@ O mapeamento das classes é construído através de algumas tags especificas do 
   
    <details>
   <summary>Controle de exceção de atributos </summary>
-  <br>
       <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/excecao1.jpg" width="1000px;" alt=""/>
   </details>
+	  <p align="justify" style="font-family:roboto;" >Levando como exemplo a classe Usuário verificamos a utilização da anotação @NotBlank que informa ao spring que aquele atributo não pode estar vazio, outra anotação é @Email que verifica se o atributo “email” está em seu formato correto.</p>
 	
+	<details>
+  <summary>Personalização de mensagens </summary>
+      <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/excecao2.jpg" width="1000px;" alt=""/>
+  </details>
+	  <p align="justify" style="font-family:roboto;" >Para personalizar as mensagens que serão mostradas, foi criado um arquivo em “resources” chamado ValidationMessages.properties, esse nome é utilizado pelo spring para verificar se existe uma mensagem caso a validação falhar, caso a validação não possua mensagem personalizada será mostrado a padrão, no arquivo criado identificamos as mensagens personalizadas, após isso identificamos na anotação @NotBlank ou @Email o id dessa mensagem, como no exemplo a seguir:</p>
 	
-	
-	
-	
-	
-	
-	
-	
+	  <p align="justify" style="font-family:roboto;" >
+@NotBlank(message = "{email.not.blank}")
+		  <br>
+@Email(message = "{email.not.valid}")
+</p>
+<p align="justify" style="font-family:roboto;" >Na classe controller da aplicação utilizamos a anotação @Valid nas requisições para verificar esses atributos.</p>
+	<summary>Anotação @Valid </summary>
+      <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/exececao3.jpg" width="1000px;" alt=""/>
+  </details>
 	
 	
  <h3>Controle de exceção utilizando ExeceptionHandler </h3>
