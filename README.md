@@ -218,7 +218,10 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
    <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/hibernate.jpg" width="1000px;" alt=""/>
   </details>
 	<p align="justify" style="font-family:roboto;">O mapeamento das classes é construído através de algumas tags especificas do Hibernate, através desses dois exemplos acima conseguimos identificar tags chaves para o mapeamento, são elas: </p>
+	<p align="justify" style="font-family:roboto;">@Table – Notação para especificar qual o nome da tabela no banco de dados; </p>
 	
+	
+	 	 
 	
 
   <details>
