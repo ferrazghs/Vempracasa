@@ -263,11 +263,11 @@ O mapeamento das classes é construído através de algumas tags especificas do 
 	  <p align="justify" style="font-family:roboto;">Levando como exemplo a classe Usuário verificamos a utilização da anotação @NotBlank que informa ao spring que aquele atributo não pode estar vazio, outra anotação é @Email que verifica se o atributo “email” está em seu formato correto.</p>
 	
   <details>
-  <summary>Dependencia Liquibase no POM.xml</summary>
+  <summary>Personalização de mensagens</summary>
   <br>
-   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/liquibase.jpg" width="1000px;" alt=""/>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/excecao2.jpg" width="1000px;" alt=""/>
   </details>
-  <p align="justify" style="font-family:roboto;">Após a configuração do POM, é criado um arquivo em resources -> db -> changelog onde é feito a configuração do diretório onde será armazenado as migrações no banco de dados.</p>
+  <p align="justify" style="font-family:roboto;">Para personalizar as mensagens que serão mostradas, foi criado um arquivo em “resources” chamado ValidationMessages.properties, esse nome é utilizado pelo spring para verificar se existe uma mensagem caso a validação falhar, caso a validação não possua mensagem personalizada será mostrado a padrão, no arquivo criado identificamos as mensagens personalizadas, após isso identificamos na anotação @NotBlank ou @Email o id dessa mensagem, como no exemplo a seguir:</p>
 	
 
 	
