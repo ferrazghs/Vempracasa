@@ -273,14 +273,9 @@ O mapeamento das classes é construído através de algumas tags especificas do 
   <br>
       <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/excecao2.jpg" width="1000px;" alt=""/>
   </details>
-   
-  
+																	 
      <p align="justify" style="font-family:roboto;
-@NotBlank(message = "{email.not.blank}")
- <br>
-@Email(message = "{email.not.valid}")
-</p>
-                                    
+Levando como exemplo a classe Usuário verificamos a utilização da anotação @NotBlank que informa ao spring que aquele atributo não pode estar vazio, outra anotação é @Email que verifica se o atributo “email” está em seu formato correto.</p>                                    
      
   <details>
   <summary>Anotação @Valid</summary>
