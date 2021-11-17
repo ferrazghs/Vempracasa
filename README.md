@@ -127,14 +127,16 @@
 </p>
                                                    
   <p align="justify" style="font-family:roboto;">
-     <b>Linha 1 (comando DML para criação de tabela)</b>                     
+     <b>Linha 1 (comando DML para criação de tabela)</b>    
+	<br>
 CREATE TABLE Usuario (
         <br>                                        
     usu_email Varchar2(80) CONSTRAINT pk_usuario PRIMARY KEY,
          <br>                                                                               
     usu_nome Varchar2(80) NOT NULL,
          <br>                                        
-<b>Linha 3 (adicionando uma restrição de chave única á coluna, impossibilitando valores iguais em colunas diferentes)</b>                                      
+<b>Linha 3 (adicionando uma restrição de chave única á coluna, impossibilitando valores iguais em colunas diferentes)</b> 
+	  <br>
     usu_cpf Varchar2(15) CONSTRAINT uk_usuario_cpf UNIQUE NOT NULL,
          <br>                                        
     usu_telefone Varchar(50) NOT NULL,
@@ -157,7 +159,7 @@ CREATE TABLE Usuario (
 </p>
      <p align="justify" style="font-family:roboto;"><b>Tabela de relacionamento (Usuário – Evento)</b></p>
     <p align="justify" style="font-family:roboto;">
-                                                
+                                             
 CREATE TABLE Usuario_Evento (
       <br>
     evt_id Integer,
@@ -177,6 +179,7 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_evt_id
     FOREIGN KEY (evt_id)
       <br>
     REFERENCES Evento (evt_id);
+      <br>
       <br>
 ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
       <br>
