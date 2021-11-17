@@ -300,7 +300,25 @@ O mapeamento das classes é construído através de algumas tags especificas do 
 
                                                                                                                                          
   <h2 style="font-family:roboto;"> Aprendizados Efetivos :book:</h2>   
-  
+   <ul>
+  <li>Metodologia Ágil Scrum
+  <ul>
+    <li>Criação do Product Backlog do projeto utilizand o Product Backlog Building;</li>
+    <li>Criação de user stories para o desenvolvimento da aplicação;</li>
+    </ul></li>
+  <li>Framework Spring Boot:
+  <ul>
+    <li>Mapeamento das classes e relacionamento de objetos utilizando hibernate;</li> 
+    <li>Arquitetura com Repository, Service, Model e Controller;</li>
+    <li>Desenvolvimento de controle de exceções utilizando ExcepetionHandler e BeanValidator;</li> 
+    </ul></li>
+  <li>Banco de dados:
+  <ul>
+    <li>Desenvolvimento do modelo conceitual do banco de dados, atendendo os requisitos do cliente;</li>
+    <li>Estruturação e configuração do Oracle SQLdeveloper</li>   
+    <li>Programação via SQL do banco de dados</li>   
+    </ul></li>
+    </ul>
   ---
 
 </body>
