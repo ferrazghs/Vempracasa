@@ -220,9 +220,9 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
   <p align="justify" style="font-family:roboto;">
 O mapeamento das classes é construído através de algumas tags especificas do Hibernate, através desses dois exemplos acima conseguimos identificar tags chaves para o mapeamento, são elas:
     <br>
-	@Table – Notação para especificar qual o nome da tabela no banco de dados.
+	  <b>@Table – Notação para especificar qual o nome da tabela no banco de dados.</b>
     <br>
-	@Column – Identifica o nome da coluna 
+	  <b>@Column – Identifica o nome da coluna </b>
     <br>
 	@Id – Identifica a “primary key”, ou seja, a coluna identificadora da tabela
     <br>
