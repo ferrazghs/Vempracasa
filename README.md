@@ -62,13 +62,15 @@
   ---
   
   <h2 style="font-family:roboto;"> Contribuições Individuais :dart:</h2>
-  <h3> Atribuições como Scrum Master</h3>
-  <p align="justify" style="font-family:roboto;"> As atribuições como Scrum Master da Equipe Sight Future são pertinentes a realizar um bom planejamento e organização das ações do grupo no decorrer das Sprints. No início do projeto foi realizada uma reunião para definir nosso principal meio de comunicação e a ferramenta para monitoramento de tarefas, assim decidimos utilizar, respectivamente, o Discord e o Jira. Como Master da equipe, fiquei responsável por acompanhar e analizar o progresso do grupo nesses softwares, de modo a observar se todos os integrantes estavam participando das Weekly Meatings e se apresentavam alguma dificuldade com a evolução das tarefas, logo atuando da melhor maneira de acordo com a situação.</p>
-  <p align="justify" style="font-family:roboto;"> Após a apresentação do problema por parte do cliente, utilizamos a metodologia Product Backlog Building (<a href="https://www.caroli.org/livro/pbb/">AGUIAR; CAROLI, 2021</a>) para a elaboração de um Backlog conciso com as necessidades do cliente. Obtendo como resultado final desse processo as User Stories que compõe o Product Backlog e a descrição da experiência do usuário com o produto, além de promover um ótimo entendimento das regras de negócio e os primeiros questionamentos para o cliente. Com esse alinhamento inicial finalizado, as User Stories foram divididas entre as 4 Sprints do projeto, destarte tive a função de quebrar essas histórias em tarefas menores e mais objetivas, para um melhor desenvolvimento do que foi planejado, e também delegar essas tasks entre os integrantes da equipe. O que pode ser observado na imagem exemplo abaixo.</p>
+  <h3>Modelo Conceitual do banco de dados</h3>
+  <p align="justify" style="font-family:roboto;">A modelagem de dados conceitual é uma descrição do projeto de banco de dados de forma independente de implementação em um SGBD, é um modelo que possui um alto nível de abstração, é o primeiro passo feito antes da implementação final dentro do SGBD Oracle. O MER (Modelo Entidade Relacionamento) é composto por : Entidade (representação de um conceito físico), Atributo (propriedades especificas de uma entidade) e Relacionamento (associações entre uma ou mais entidades</p>
+  
+  <p align="justify" style="font-family:roboto;">O modelo foi desenvolvido utilizando o software “brModelo” especifico para a criação do MER. Após a definição do “Product Backlog” e o desenvolvimento das perguntas que foram enviadas a empresa parceira através do PO do time, para obter uma visão mais aprofundada sobre o projeto, foi feito uma análise sobre a proposta e com isso foi possível o desenvolvimento das entidades, atributos e relacionamentos presentes no modelo. Essa parte foi crucial no inicio do projeto para elaborar um modelo de dados consistente e funcional, com o MER conseguimos resolver questões importantes que refletiram durante as sprints, por exemplo, o relacionamento que os usuários do sistema têm com os eventos criados pelos mesmos.</p>
+ 
   <details>
-  <summary>Demonstração da Organização de uma Sprint no Jira</summary>
+  <summary>Demonstração do modelo conceitual</summary>
   <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Jira.png" width="1000px;" alt=""/>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/conceitual.jpg" width="1000px;" alt=""/>
   </details>
   
   <h3> Atribuições como Desenvolvedor Back-End</h3>
