@@ -226,10 +226,6 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
 
 	
 
-	    <p align="justify" style="font-family:roboto;" > <b>@Table – Notação para especificar qual o nome da tabela no banco de dados;</b> </p>
-	    <p align="justify" style="font-family:roboto;" ><b>@Column – Identifica o nome da coluna;</b></p>		 	
-	    <p align="justify" style="font-family:roboto;" ><b>@Id – Identifica a “primary key”, ou seja, a coluna identificadora da tabela;</b></p>		 	
-	    <p align="justify" style="font-family:roboto;" ><b>@SequenceGenerator – Cria uma sequencia de números no banco de dados.</b></p>		 	
 
   <details>
   <summary>Exemplo mapeamento de classes</summary>
