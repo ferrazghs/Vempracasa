@@ -303,18 +303,18 @@ O mapeamento das classes é construído através de algumas tags especificas do 
    <ul>
   <li>Metodologia Ágil Scrum
   <ul>
-    <li>Criação do Product Backlog do projeto utilizand o Product Backlog Building;</li>
-    <li>Criação de user stories para o desenvolvimento da aplicação;</li>
+    <li>Criação do Product Backlog do projeto utilizando o método Product Backlog Building;</li>
+    <li>Criação das user stories para o desenvolvimento da aplicação;</li>
     </ul></li>
   <li>Framework Spring Boot:
   <ul>
-    <li>Mapeamento das classes e relacionamento de objetos utilizando hibernate;</li> 
+    <li>Mapeamento das classes e relacionamento de objetos utilizando Hibernate;</li> 
     <li>Arquitetura com Repository, Service, Model e Controller;</li>
-    <li>Desenvolvimento de controle de exceções utilizando ExcepetionHandler e BeanValidator;</li> 
+    <li>Desenvolvimento do controle de exceções utilizando ExceptionHandler e BeanValidation;</li> 
     </ul></li>
   <li>Banco de dados:
   <ul>
-    <li>Desenvolvimento do modelo conceitual do banco de dados, atendendo os requisitos do cliente;</li>
+    <li>Desenvolvimento do modelo conceitual do banco de dados atendendo os requisitos do cliente;</li>
     <li>Estruturação e configuração do Oracle SQLdeveloper</li>   
     <li>Programação via SQL do banco de dados</li>   
     </ul></li>
