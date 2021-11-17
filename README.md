@@ -62,6 +62,7 @@
   ---
   
   <h2 style="font-family:roboto;"> Contribuições Individuais :dart:</h2>
+  
   <h3>Modelo Conceitual do banco de dados</h3>
   <p align="justify" style="font-family:roboto;">A modelagem de dados conceitual é uma descrição do projeto de banco de dados de forma independente de implementação em um SGBD, é um modelo que possui um alto nível de abstração, é o primeiro passo feito antes da implementação final dentro do SGBD Oracle. O MER (Modelo Entidade Relacionamento) é composto por : Entidade (representação de um conceito físico), Atributo (propriedades especificas de uma entidade) e Relacionamento (associações entre uma ou mais entidades</p>
   
@@ -73,14 +74,15 @@
    <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/conceitual.jpg" width="1000px;" alt=""/>
   </details>
   
-  <h3> Atribuições como Desenvolvedor Back-End</h3>
-  <p align="justify" style="font-family:roboto;"> Como Desenvolvedor Back-End, as atribuições foram relacionadas com a elaboração da lógica do sistema web planejado, tendo em vista as regras de negócio propostas pelo cliente. Criando os Endpoints que serão utilizados na interação com o Front-End, obtendo uma solução completa com todas as funcionalidades necessárias. Como demonstrado no tópico de Tecnologias Adotadas, foi utilizado Java com a framework Spring Boot para o desenvolvimento Back-End, portanto os próximos parágrafos irão descrever a minha experiência em contribuir com a lógica do projeto.</p>
+  <h3> Modelo relacional banco de dados</h3>
+  <p align="justify" style="font-family:roboto;">O modelo relacional é um tipo de modelo lógico, é também uma parte importante durante o desenvolvimento de um banco de dados completo e funcional, esse modelo apresenta uma estrutura diferente do modelo conceitual, é baseado em : Linhas, Colunas e Chave primária(PK) s e se relacionam através de chaves estrangeiras(FK), é um modelo intermediário, está localizado entre o modelo conceitual que é o primeiro passo, e o a estruturação no SGBD. Para o desenvolvimento desse modelo foi utilizado à ferramenta “Vertabelo” que é possível estruturar seu modelo relacional utilizando todas as informações necessárias.</p>
   
-  <p align="justify" style="font-family:roboto;"> O primeiro passo foi a configuração do ambiente que iríamos utilizar. A fizemos pelo <a href="https://start.spring.io/">Sprint Initializr</a>, o estruturando com Spring Boot 2.5.4, Java 8 e Maven. Logo, adicionamos todas as dependências necessárias no arquivo POM.xml, sendo as mais importantes: o driver de conexão com o Banco de Dados Oracle (ojdbc8), o JPA (spring-boot-starter-data-jpa) e o Spring Boot Starter Web (spring-boot-starter-web). Como mostra a imagem a seguir.</p>
+  <p align="justify" style="font-family:roboto;">O desenvolvimento foi feito levando em consideração as entidades, atributos e relacionamento do conceitual, nesse novo modelo as entidades se tornam tabelas, os atributos se tornam colunas e os relacionamentos são feitos através de chaves estrangeiras, nele também ocorre a “trigramação” que é uma técnica utilizada para nomear tabelas e colunas.</p>
+  
   <details>
-  <summary>POM.xml do Projeto</summary>
+  <summary>Demonstração modelo relacional</summary>
   <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Pom.png" width="800px;" alt=""/>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/relacional.jpg" width="800px;" alt=""/>
   </details>
   
   <p align="justify" style="font-family:roboto;"> Com isso finalizado e versionado no GitHub, decidimos qual seria a Arquitetura a se empregar com o Spring Boot e chegamos no seguinte resultado:</p>
