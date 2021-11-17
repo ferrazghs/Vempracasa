@@ -90,9 +90,9 @@
   
    <h3>Estruturação do banco de dados </h3>
   <p align="justify" style="font-family:roboto;">Após a finalização dos modelos, foi feito a estruturação do banco de dados através do modelo relacional para linguagem SQL no banco de dados Oracle utilizando comando DML.</p>
-  <p align="justify" style="font-family:roboto;Os códigos SQL abaixo são alguns exemplos  de códigos SQL que foram desenvolvidos durante a estruturação do banco de dados.</p>
+  <p align="justify" style="font-family:roboto;">Os códigos SQL abaixo são alguns exemplos  de códigos SQL que foram desenvolvidos durante a estruturação do banco de dados.</p>
  
-   <p align="justify" style="font-family:roboto;">* Comando DML para criar algumas tabelas no banco de dados, atribuindo suas colunas e especificando as restrições de integridade conforme o modelo relacional</p>
+   <p align="justify" style="font-family:roboto;">Comando DML para criar algumas tabelas no banco de dados, atribuindo suas colunas e especificando as restrições de integridade conforme o modelo relacional</p>
    
   <p align="justify" style="font-family:roboto;">
      <b>Linha 1 (comando DML para criação de tabela)</b>
@@ -158,7 +158,38 @@ CREATE TABLE Usuario (
           <br>                                        
 ) ;
 </p>
+     <p align="justify" style="font-family:roboto;">Tabela de relacionamento (Usuário – Evento)</p>
+    <p align="justify" style="font-family:roboto;">
+                                                
+CREATE TABLE Usuario_Evento (
+      <br>
+    evt_id Integer,
+      <br>
+    usu_email Varchar2(80),
+      <br>
+<b>Linha 3 (atribuição das chaves primárias da tabela, informando duas colunas, tornando assim uma chave primária composta)</b>
+      <br>
+    CONSTRAINT pk_usuario_evento PRIMARY KEY (evt_id,usu_email)
+      <br>
+) ;
+  </p>
   
+  <p align="justify" style="font-family:roboto;">Especificação das chaves estrangeiras da tabela Usuario_Evento, referenciando as tabelas de origem.</p>
+    <p align="justify" style="font-family:roboto;">
+           <br>                                     
+ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_evt_id
+      <br>
+    FOREIGN KEY (evt_id)
+      <br>
+    REFERENCES Evento (evt_id);
+      <br>
+ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
+      <br>
+    FOREIGN KEY (usu_email)
+      <br>
+    REFERENCES Usuario (usu_email);
+      <br>
+  </p>
   <details>
   <summary>Entidade Model</summary>
   <br>
