@@ -103,7 +103,7 @@ CREATE TABLE Evento
        <br>
     evt_id Integer CONSTRAINT pk_evento PRIMARY KEY,
        <br>
-  <b>Linha 3 (atribuindo a coluna uma restrição que não aceita valores nulos)</br>
+  <b>Linha 3 (atribuindo a coluna uma restrição que não aceita valores nulos)</b>
        <br>
     evt_titulo Varchar2(30)  NOT NULL,
        <br>
@@ -115,7 +115,7 @@ CREATE TABLE Evento
        <br>
     evt_tipo Varchar2(10) NOT NULL,
        <br>
-  <br>Linha 9 (imputando uma valor default NULL, caso não seja inserido nenhum valor na coluna)</b>
+  <b>Linha 9 (imputando uma valor default NULL, caso não seja inserido nenhum valor na coluna)</b>
        <br>
     evt_status Integer DEFAULT NULL,
        <br>
