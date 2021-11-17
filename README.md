@@ -92,19 +92,29 @@
   <p align="justify" style="font-family:roboto;">Após a finalização dos modelos, foi feito a estruturação do banco de dados através do modelo relacional para linguagem SQL no banco de dados Oracle utilizando comando DML.</p>
   <p align="justify" style="font-family:roboto;Os códigos SQL abaixo são alguns exemplos  de códigos SQL que foram desenvolvidos durante a estruturação do banco de dados.</p>
  
-  <p align="justify" style="font-family:roboto;">"Comando DML para criar algumas tabelas no banco de dados, atribuindo suas colunas e especificando as restrições de integridade conforme o modelo relacional</p>
+  <p align="justify" style="font-family:roboto;">Comando DML para criar algumas tabelas no banco de dados, atribuindo suas colunas e especificando as restrições de integridade conforme o modelo relacional</p>
    
   <p align="justify" style="font-family:roboto;">"
     Linha 1 (comando DML para criação de tabela)
+       <br>
 CREATE TABLE Evento 
+       <br>
 Linha 2 (atribuindo a coluna uma chave primaria e denominando um nome a sua constraint)
+       <br>
     evt_id Integer CONSTRAINT pk_evento PRIMARY KEY,
+       <br>
 Linha 3 (atribuindo a coluna uma restrição que não aceita valores nulos)
+       <br>
     evt_titulo Varchar2(30)  NOT NULL,
+       <br>
     evt_descricao Varchar2(80),
+       <br>
     evt_data_inicio Varchar2(100)NOT NULL,
-    evt_data_fim Varchar2(100) NOT NULL,
+       <br>
+    evt_data_fim Varchar2(100) NOT NULL, 
+       <br>
     evt_tipo Varchar2(10) NOT NULL,
+       <br>
 Linha 9 (imputando uma valor default NULL, caso não seja inserido nenhum valor na coluna)
     evt_status Integer DEFAULT NULL,
     evt_imagem Varchar2(200),
