@@ -44,10 +44,11 @@
   <h2 style="font-family:roboto;"> Tecnologias Adotadas :computer:</h2>
    
  
-  <h3><a href="https://www.java.com/pt_BR/">Java<h3>:
-
+	
+  <li><a href="https://spring.io/">Java</a>:
+  <ul>
     <p align="justify" style="font-family:roboto;">  O Java é uma linguagem de programação orientada a objetos. Foi utilizada durante o desenvolvimento do back-end do projeto. Por conta dos integrantes do grupo já possuírem um conhecimento prévio no desenvolvimento baseado nessa linguagem, ela é muita utilizada no mercado de trabalho, além de possuir uma extensa documentação, facilitando o desenvolvimento do projeto.</p>
-
+</ul></li>
 	 
 <ul>
   <li><a href="https://spring.io/">Spring Boot</a>:
