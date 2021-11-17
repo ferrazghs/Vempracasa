@@ -262,21 +262,14 @@ O mapeamento das classes é construído através de algumas tags especificas do 
   </details>
 	  <p align="justify" style="font-family:roboto;">Levando como exemplo a classe Usuário verificamos a utilização da anotação @NotBlank que informa ao spring que aquele atributo não pode estar vazio, outra anotação é @Email que verifica se o atributo “email” está em seu formato correto.</p>
 	
- <details>
-  <summary>Personalização de mensagens</summary>
+  <details>
+  <summary>Dependencia Liquibase no POM.xml</summary>
   <br>
-   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/excecao2.jpg" width="1000px;" alt=""/>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/liquibase.jpg" width="1000px;" alt=""/>
   </details>
+  <p align="justify" style="font-family:roboto;">Após a configuração do POM, é criado um arquivo em resources -> db -> changelog onde é feito a configuração do diretório onde será armazenado as migrações no banco de dados.</p>
 	
 
-	  <p align="justify" style="font-family:roboto;">Outra controle de execeção utilizado foi desenvolvido atráves do ExceptionHandler utilizada para tratar algumas exceções especificas do sistema e retornar a mensagem ao usuário.</p>
-	
-<p align="justify" style="font-family:roboto;" >Na classe controller da aplicação utilizamos a anotação @Valid nas requisições para verificar esses atributos.</p>
-	
-	<summary>Anotação @Valid </summary>
-      <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/exececao3.jpg" width="1000px;" alt=""/>
-  </details>
-	
 	
  <h3>Controle de exceção utilizando ExeceptionHandler </h3>
    <p align="justify" style="font-family:roboto;">Outra controle de execeção utilizado foi desenvolvido atráves do ExceptionHandler utilizada para tratar algumas exceções especificas do sistema e retornar a mensagem ao usuário.</p>
