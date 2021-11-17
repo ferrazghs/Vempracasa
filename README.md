@@ -43,24 +43,48 @@
   
   <h2 style="font-family:roboto;"> Tecnologias Adotadas :computer:</h2>
    
-  * [Java](https://www.java.com/pt_BR/)
-<p align="justify" style="font-family:roboto;"> O Java é uma linguagem de programação orientada a objetos. Foi utilizada durante o desenvolvimento do back-end do projeto. Por conta dos integrantes do grupo já possuírem um conhecimento prévio no desenvolvimento baseado nessa linguagem, ela é muita utilizada no mercado de trabalho, além de possuir uma extensa documentação, facilitando o desenvolvimento do projeto.</p>
-  * [Spring Boot](https://spring.io/)
-  <p align="justify" style="font-family:roboto;">Spring boot é um framework Java open-source que facilita o desenvolvimento de aplicações baseadas em Java, tornando o desenvolvimento mais rápido e dinâmico. Além de possuir diversas funcionalidades, o recurso foi utilizado durante o projeto para fazer a configuração de todas as bibliotecas que foram utilizadas, tornando o desenvolvimento mais rápido, além de um código fonte mais limpo. O framework foi escolhido pois ele facilita durante o desenvolvimento de projetos, fazendo com que os programadores se preocupem apenas com a implementação das regras de negocio.</p>
-  * [JavaScript](https://www.javascript.com/)
-  <p align="justify" style="font-family:roboto;">Javascript é uma linguagem de programação de script em alto nível, utilizado em páginas web. Foi utilizada durante o projeto para implementar no software a interação que o usuário possui com nossas páginas web, tornando assim sua navegação mais dinâmica.  A linguagem foi escolhida pelo grupo, pois é uma das linguagens mais utilizadas no mercado de trabalho para esse tipo de interação, além da alta compatibilidade com navegadores web.</p>
-  * [Angular](https://angular.io/)
-    <p align="justify" style="font-family:roboto;"> Angular é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em typescript, essa plataforma é utilizada na construção otimizada de interfaces de aplicações, utilizado HTML, CSS e principalmente Javascript. Foi usada durante o desenvolvimento das páginas web presente no projeto, possibilitando uma programação mais ágil e fácil. Além de ser uma plataforma bastante utilizada, é open-source ou seja, existe uma grande variedade de conteúdos e funcionalidades disponibilizadas dentro da plataforma.</p>
-  * [Oracle](https://www.oracle.com/tools/downloads/sqldev-downloads.html)
-      <p align="justify" style="font-family:roboto;"> Oracle é um Sistema Gerenciador de Banco de Dados de alto nível que utiliza banco de dados relacional. O SGBD foi utilizado durante a execução dos scipts SQL para a prototipação das tabelas e colunas de acordo com o modelo relacional desenvolvido previamente, além da manutenção e armazenamento dos dados do sistema. Foi escolhido pela equipe, pois é um SGBD robusto e com uma grande variedade de funcionalidades. </p>
-  * [Figma](https://www.figma.com/)
-    <p align="justify" style="font-family:roboto;"> Figma é um editor gráfico de vetor e prototipagem de projetos. Ele foi utilizado no projeto durante a prototipação do “Product Backlog Building” um método apresentado pelo PO da equipe, que foi utilizado para criação de um backlog colaborativo e de forma organizada, para que cada um dos integrantes do time pudesse expor suas ideias referentes ao projeto e assim organizar nossas funcionalidades, além disso, a ferramenta foi usada para a criação dos “Wireframes” do projeto, que posteriormente foram apresentadas ao clientes e validadas, a ferramenta foi escolhida pela equipe, pela a alta utilização no mercado e fácil utilização do software.</p>
-  * [Jira](https://vempracasa.atlassian.net/) 
-     <p align="justify" style="font-family:roboto;">Jira é uma ferramenta que permite o monitoramento de tarefas e acompanhamento de projetos em um único lugar. Utilizamos esse software para desenvolver e monitorar nosso Sprint backlog, onde podemos repartir as funções a serem desenvolvidas em “cartões” para um melhor acompanhamento de evolução e organização e atribuir quem é o responsável por aquela tarefa a ser desenvolvida, além de separar por área (back-end, front-end ou banco de dados) e delegar ao responsável uma data de inicio e fim daquela tarefa. O software foi escolhido pela equipe pois é utilizado em grande escala no mercado de trabalho, além de ser uma ferramenta fácil e intuitiva.</p>
+ <ul>
+  <li><a href="https://www.java.com/pt_BR/">Java</a>:
+  <ul>
+    <li><p align="justify" style="font-family:roboto;">  O Java é uma linguagem de programação orientada a objetos. Foi utilizada durante o desenvolvimento do back-end do projeto. Por conta dos integrantes do grupo já possuírem um conhecimento prévio no desenvolvimento baseado nessa linguagem, ela é muita utilizada no mercado de trabalho, além de possuir uma extensa documentação, facilitando o desenvolvimento do projeto.</p></li>
+  </ul></li>
+	 
+<ul>
+  <li><a href="https://spring.io/">Spring Boot</a>:
+  <ul>
+    <li><p align="justify" style="font-family:roboto;"> Spring boot é um framework Java open-source que facilita o desenvolvimento de aplicações baseadas em Java, tornando o desenvolvimento mais rápido e dinâmico. Além de possuir diversas funcionalidades, o recurso foi utilizado durante o projeto para fazer a configuração de todas as bibliotecas que foram utilizadas, tornando o desenvolvimento mais rápido, além de um código fonte mais limpo. O framework foi escolhido pois ele facilita durante o desenvolvimento de projetos, fazendo com que os programadores se preocupem apenas com a implementação das regras de negocio.</p></li>
+  </ul></li>
+	 
+<ul>
+  <li><a href="https://www.javascript.com/">JavaScript</a>:
+  <ul>
+    <li><p align="justify" style="font-family:roboto;">Javascript é uma linguagem de programação de script em alto nível, utilizado em páginas web. Foi utilizada durante o projeto para implementar no software a interação que o usuário possui com nossas páginas web, tornando assim sua navegação mais dinâmica.  A linguagem foi escolhida pelo grupo, pois é uma das linguagens mais utilizadas no mercado de trabalho para esse tipo de interação, além da alta compatibilidade com navegadores web.</p></li>
+  </ul></li>	
+	
+<ul>
+  <li><a href="https://angular.io/">Angular</a>:
+  <ul>
+    <li><p align="justify" style="font-family:roboto;">Angular é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em typescript, essa plataforma é utilizada na construção otimizada de interfaces de aplicações, utilizado HTML, CSS e principalmente Javascript. Foi usada durante o desenvolvimento das páginas web presente no projeto, possibilitando uma programação mais ágil e fácil. Além de ser uma plataforma bastante utilizada, é open-source ou seja, existe uma grande variedade de conteúdos e funcionalidades disponibilizadas dentro da plataforma.</p></li>
+  </ul></li>	
+	
+<ul>
+  <li><a href="https://www.oracle.com/tools/downloads/sqldev-downloads.html">Oracle</a>:
+  <ul>
+    <li><p align="justify" style="font-family:roboto;">Oracle é um Sistema Gerenciador de Banco de Dados de alto nível que utiliza banco de dados relacional. O SGBD foi utilizado durante a execução dos scipts SQL para a prototipação das tabelas e colunas de acordo com o modelo relacional desenvolvido previamente, além da manutenção e armazenamento dos dados do sistema. Foi escolhido pela equipe, pois é um SGBD robusto e com uma grande variedade de funcionalidades.</p></li>
+  </ul></li>	
 
-  
-  ---
-  
+<ul>
+  <li><a href="https://www.figma.com/">Figma</a>:
+  <ul>
+    <li><p align="justify" style="font-family:roboto;">Figma é um editor gráfico de vetor e prototipagem de projetos. Ele foi utilizado no projeto durante a prototipação do “Product Backlog Building” um método apresentado pelo PO da equipe, que foi utilizado para criação de um backlog colaborativo e de forma organizada, para que cada um dos integrantes do time pudesse expor suas ideias referentes ao projeto e assim organizar nossas funcionalidades, além disso, a ferramenta foi usada para a criação dos “Wireframes” do projeto, que posteriormente foram apresentadas ao clientes e validadas, a ferramenta foi escolhida pela equipe, pela a alta utilização no mercado e fácil utilização do software.</p></li>
+  </ul></li>	
+ 
+	<ul>
+  <li><a href="https://vempracasa.atlassian.net/">Jira</a>:
+  <ul>
+    <li><p align="justify" style="font-family:roboto;">Jira é uma ferramenta que permite o monitoramento de tarefas e acompanhamento de projetos em um único lugar. Utilizamos esse software para desenvolver e monitorar nosso Sprint backlog, onde podemos repartir as funções a serem desenvolvidas em “cartões” para um melhor acompanhamento de evolução e organização e atribuir quem é o responsável por aquela tarefa a ser desenvolvida, além de separar por área (back-end, front-end ou banco de dados) e delegar ao responsável uma data de inicio e fim daquela tarefa. O software foi escolhido pela equipe pois é utilizado em grande escala no mercado de trabalho, além de ser uma ferramenta fácil e intuitiva.</p></li>
+  </ul></li>	  
+
   <h2 style="font-family:roboto;"> Contribuições Individuais :dart:</h2>
   
   <h3>Modelo Conceitual do banco de dados</h3>
