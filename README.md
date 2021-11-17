@@ -235,15 +235,14 @@ O mapeamento das classes é construído através de algumas tags especificas do 
     <br>
     <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/orm2.jpg" width="1000px;" alt=""/>
   </details>-
-  <p align="justify" style="font-family:roboto;">Além das anotações citadas, é possível adicionar características especificas a determinada coluna. Ex:
+  <p align="justify" style="font-family:roboto;">Além das anotações citadas, é possível adicionar características especificas a determinada coluna. Ex:</p>	
 	
-	     <b>@Column(name = "evt_titulo", nullable = false, length = 30)</b> 
-</p>	
-	 <p align="justify" style="font-family:roboto;">No trecho de código foi possível determinar o tamanho de caracteres a coluna aceita e também estabelecer que a coluna não aceita valores nulos.
+     <p align="justify" style="font-family:roboto;"<b>>@Column(name = "evt_titulo", nullable = false, length = 30)</b></p> 
+	  
+	 <p align="justify" style="font-family:roboto;">No trecho de código foi possível determinar o tamanho de caracteres a coluna aceita e também estabelecer que a coluna não aceita valores nulos.</p>
 		 
-    <b>@Column(name = "usu_cpf", unique = true, nullable = false, length = 15)</b>
+     <p align="justify" style="font-family:roboto;"<b>>@Column(name = "usu_cpf", unique = true, nullable = false, length = 15)</b></p>
 		 
-	</p>
 	
   <p align="justify" style="font-family:roboto;"Nesse outro trecho foi possível estabelecer que a coluna tem uma restrição de chave única (UK).</p>
   <p align="justify" style="font-family:roboto;"Durante o desenvolvimento do modelo utilizado no banco de dados, verificamos diversos relacionamento com cardinalidade n:n ( muitos pra muitos) ou seja vários elementos de uma entidade A podem se relacionar com vários elementos da entidade B e vice-versa, esses relacionamentos geram no banco de dados uma tabela de ligação, que possui o atributo identificador da primeira tabela com o identificador da segunda tabela.</p>
