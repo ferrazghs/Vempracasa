@@ -92,7 +92,7 @@
   <p align="justify" style="font-family:roboto;">Após a finalização dos modelos, foi feito a estruturação do banco de dados através do modelo relacional para linguagem SQL no banco de dados Oracle utilizando comando DML.</p>
   <p align="justify" style="font-family:roboto;Os códigos SQL abaixo são alguns exemplos  de códigos SQL que foram desenvolvidos durante a estruturação do banco de dados.</p>
  
-  <p align="justify" style="font-family:roboto;">Comando DML para criar algumas tabelas no banco de dados, atribuindo suas colunas e especificando as restrições de integridade conforme o modelo relacional</p>
+  <h3>Comando DML para criar algumas tabelas no banco de dados, atribuindo suas colunas e especificando as restrições de integridade conforme o modelo relacional</h3>
    
   <p align="justify" style="font-family:roboto;">
      <b>Linha 1 (comando DML para criação de tabela)</b>
