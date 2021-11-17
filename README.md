@@ -97,7 +97,7 @@
   <p align="justify" style="font-family:roboto;">
      <b>Linha 1 (comando DML para criação de tabela)</b>
        <br>
-CREATE TABLE Evento 
+     <h4>CREATE TABLE Evento</h4>
        <br>
   <b>Linha 2 (atribuindo a coluna uma chave primaria e denominando um nome a sua constraint)</b>
        <br>
