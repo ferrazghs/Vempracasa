@@ -271,13 +271,15 @@ O mapeamento das classes é construído através de algumas tags especificas do 
 	
 <p align="justify" style="font-family:roboto;">
 @NotBlank(message = "{email.not.blank}")
-	<br>
+</p>
+	
+<p align="justify" style="font-family:roboto;">
 @Email(message = "{email.not.valid}")
 
-	</p>
+</p>
 	
  <p align="justify" style="font-family:roboto;">Na classe controller da aplicação utilizamos a anotação @Valid nas requisições para verificar esses atributos.</p>
- 
+<details>
 <summary>Anotação @Valid</summary>
   <br>
    <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/exececao3.jpg" width="1000px;" alt=""/>
