@@ -94,7 +94,7 @@
  
   <p align="justify" style="font-family:roboto;">Comando DML para criar algumas tabelas no banco de dados, atribuindo suas colunas e especificando as restrições de integridade conforme o modelo relacional</p>
    
-  <p align="justify" style="font-family:roboto;">"
+  <p align="justify" style="font-family:roboto;">
      <b>Linha 1 (comando DML para criação de tabela)</b>
        <br>
 CREATE TABLE Evento 
@@ -123,7 +123,39 @@ CREATE TABLE Evento
        <br>
     usu_email Varchar2(80)
        <br>
-
+) ;
+</p>
+                                                   
+  <p align="justify" style="font-family:roboto;">
+     <b>Linha 1 (comando DML para criação de tabela)</b>
+       <br>
+                                                
+CREATE TABLE Usuario (
+        <br>                                        
+    usu_email Varchar2(80) CONSTRAINT pk_usuario PRIMARY KEY,
+         <br>                                                                               
+    usu_nome Varchar2(80) NOT NULL,
+         <br>                                        
+<b>Linha 3 (adicionando uma restrição de chave única á coluna, impossibilitando valores iguais em colunas diferentes)</b>
+         <br>                                        
+    usu_cpf Varchar2(15) CONSTRAINT uk_usuario_cpf UNIQUE NOT NULL,
+         <br>                                        
+    usu_telefone Varchar(50) NOT NULL,
+         <br>                                                                      
+    usu_departamento Varchar2(30),
+         <br>                                        
+    usu_nome_empresa Varchar2(50),
+          <br>                                        
+    usu_id_oracle Integer,
+          <br>                                        
+    usu_comprovante_vacinacao Varchar(200),
+         <br>                                        
+    usu_tipo Varchar2(20)NOT NULL,
+        <br>                                        
+    usu_cargo Varchar2(50),
+         <br>                                        
+    usu_senha Varchar2(100) CONSTRAINT uk_usuario_senha UNIQUE NOT NULL
+          <br>                                        
 ) ;
 </p>
   
