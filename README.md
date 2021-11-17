@@ -95,15 +95,15 @@
   <p align="justify" style="font-family:roboto;">Comando DML para criar algumas tabelas no banco de dados, atribuindo suas colunas e especificando as restrições de integridade conforme o modelo relacional</p>
    
   <p align="justify" style="font-family:roboto;">"
-    Linha 1 (comando DML para criação de tabela)
+     <b>Linha 1 (comando DML para criação de tabela)</b>
        <br>
 CREATE TABLE Evento 
        <br>
-Linha 2 (atribuindo a coluna uma chave primaria e denominando um nome a sua constraint)
+  <b>Linha 2 (atribuindo a coluna uma chave primaria e denominando um nome a sua constraint)</b>
        <br>
     evt_id Integer CONSTRAINT pk_evento PRIMARY KEY,
        <br>
-Linha 3 (atribuindo a coluna uma restrição que não aceita valores nulos)
+  <b>Linha 3 (atribuindo a coluna uma restrição que não aceita valores nulos)</br>
        <br>
     evt_titulo Varchar2(30)  NOT NULL,
        <br>
@@ -115,10 +115,15 @@ Linha 3 (atribuindo a coluna uma restrição que não aceita valores nulos)
        <br>
     evt_tipo Varchar2(10) NOT NULL,
        <br>
-Linha 9 (imputando uma valor default NULL, caso não seja inserido nenhum valor na coluna)
+  <br>Linha 9 (imputando uma valor default NULL, caso não seja inserido nenhum valor na coluna)</b>
+       <br>
     evt_status Integer DEFAULT NULL,
+       <br>
     evt_imagem Varchar2(200),
+       <br>
     usu_email Varchar2(80)
+       <br>
+
 ) ;
 </p>
   
