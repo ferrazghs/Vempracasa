@@ -47,17 +47,17 @@
 	
   <li><a href="https://spring.io/">Java</a>:
   <ul>
-    <p align="justify" style="font-family:roboto;">  O Java é uma linguagem de programação orientada a objetos. Foi utilizada durante o desenvolvimento do back-end do projeto. Por conta dos integrantes do grupo já possuírem um conhecimento prévio no desenvolvimento baseado nessa linguagem, ela é muita utilizada no mercado de trabalho, além de possuir uma extensa documentação, facilitando o desenvolvimento do projeto.</p>
+    <p align="justify" style="font-family:roboto;">  O Java é uma linguagem de programação orientada a objetos. Foi utilizada durante o desenvolvimento do back-end do projeto, por um conhecimento prévio no desenvolvimento baseado nessa linguagem por parte do time, além de ser uma linguagem muita utilizada no mercado de trabalho e possuir uma extensa documentação, facilitando o desenvolvimento do projeto.</p>
 </ul></li>
 	 
   <li><a href="https://spring.io/">Spring Boot</a>:
   <ul>
-    <p align="justify" style="font-family:roboto;"> Spring boot é um framework Java open-source que facilita o desenvolvimento de aplicações baseadas em Java, tornando o desenvolvimento mais rápido e dinâmico. Além de possuir diversas funcionalidades, o recurso foi utilizado durante o projeto para fazer a configuração de todas as bibliotecas que foram utilizadas, tornando o desenvolvimento mais rápido, além de um código fonte mais limpo. O framework foi escolhido pois ele facilita durante o desenvolvimento de projetos, fazendo com que os programadores se preocupem apenas com a implementação das regras de negocio.</p>
+    <p align="justify" style="font-family:roboto;">O Spring Boot é um framework Java open-source que facilita o desenvolvimento de aplicações baseadas em Java, tornando o trabalho mais rápido e dinâmico. Além de possuir diversas funcionalidades, o recurso foi utilizado durante o projeto para fazer a configuração de todas as bibliotecas que foram utilizado, O framework foi escolhido, pois facilita durante o desenvolvimento de projetos, fazendo com que os programadores se preocupem apenas com a implementação das regras de negocio. </p>
   </ul></li>
 	 
   <li><a href="https://www.javascript.com/">JavaScript</a>:
   <ul>
-    <p align="justify" style="font-family:roboto;">Javascript é uma linguagem de programação de script em alto nível, utilizado em páginas web. Foi utilizada durante o projeto para implementar no software a interação que o usuário possui com nossas páginas web, tornando assim sua navegação mais dinâmica.  A linguagem foi escolhida pelo grupo, pois é uma das linguagens mais utilizadas no mercado de trabalho para esse tipo de interação, além da alta compatibilidade com navegadores web.</p>
+    <p align="justify" style="font-family:roboto;">Javascript é uma linguagem de programação de script em alto nível, usado em páginas web. Foi utilizado durante o projeto para implementar a interação que o usuário possui com nossas páginas web, tornando assim sua navegação mais dinâmica.  A linguagem foi escolhida pelo grupo, pois é uma das linguagens mais utilizadas no mercado de trabalho para esse tipo de interação, além da alta compatibilidade com navegadores web.</p>
   </ul></li>	
 	
   <li><a href="https://angular.io/">Angular</a>:
@@ -72,7 +72,7 @@
 
   <li><a href="https://www.figma.com/">Figma</a>:
   <ul>
-    <p align="justify" style="font-family:roboto;">Figma é um editor gráfico de vetor e prototipagem de projetos. Ele foi utilizado no projeto durante a prototipação do “Product Backlog Building” um método apresentado pelo PO da equipe, que foi utilizado para criação de um backlog colaborativo e de forma organizada, para que cada um dos integrantes do time pudesse expor suas ideias referentes ao projeto e assim organizar nossas funcionalidades, além disso, a ferramenta foi usada para a criação dos “Wireframes” do projeto, que posteriormente foram apresentadas ao clientes e validadas, a ferramenta foi escolhida pela equipe, pela a alta utilização no mercado e fácil utilização do software.</p>
+    <p align="justify" style="font-family:roboto;">Figma é um editor gráfico de vetor e prototipagem de projetos. Ele foi utilizado no projeto durante a prototipação do “Product Backlog Building” um método apresentado pelo PO da equipe, que foi usado para criação de um backlog colaborativo e de forma organizada, para que cada um dos integrantes do time pudesse expor suas ideias referentes ao projeto e assim organizar nossas funcionalidades, além disso, a ferramenta foi usada para a criação das “Wireframes” do projeto, que posteriormente foram apresentadas ao clientes e validadas, a ferramenta foi escolhida pela equipe, pela a alta utilização no mercado e fácil utilização do software.</p>
   </ul></li>	
  
   <li><a href="https://vempracasa.atlassian.net/">Jira</a>:
@@ -85,7 +85,7 @@
   <h3>Modelo Conceitual do banco de dados</h3>
   <p align="justify" style="font-family:roboto;">A modelagem de dados conceitual é uma descrição do projeto de banco de dados de forma independente de implementação em um SGBD, é um modelo que possui um alto nível de abstração, é o primeiro passo feito antes da implementação final dentro do SGBD Oracle. O MER (Modelo Entidade Relacionamento) é composto por : Entidade (representação de um conceito físico), Atributo (propriedades especificas de uma entidade) e Relacionamento (associações entre uma ou mais entidades</p>
   
-  <p align="justify" style="font-family:roboto;">O modelo foi desenvolvido utilizando o software “brModelo” especifico para a criação do MER. Após a definição do “Product Backlog” e o desenvolvimento das perguntas que foram enviadas a empresa parceira através do PO do time, para obter uma visão mais aprofundada sobre o projeto, foi feito uma análise sobre a proposta e com isso foi possível o desenvolvimento das entidades, atributos e relacionamentos presentes no modelo. Essa parte foi crucial no inicio do projeto para elaborar um modelo de dados consistente e funcional, com o MER conseguimos resolver questões importantes que refletiram durante as sprints, por exemplo, o relacionamento que os usuários do sistema têm com os eventos criados pelos mesmos.</p>
+  <p align="justify" style="font-family:roboto;">O modelo foi desenvolvido utilizando o software “brModelo” especifico para a criação do MER. Após a definição do “Product Backlog” e o desenvolvimento das perguntas que foram enviadas a empresa parceira, para obter uma visão mais aprofundada sobre o projeto, foi feito uma análise sobre a proposta e com isso foi possível o desenvolvimento das entidades, atributos e relacionamentos presentes no modelo. Essa parte foi crucial no inicio do projeto para elaborar um modelo de dados consistente e funcional, com o MER conseguimos resolver questões importantes que refletiram durante as sprints, por exemplo, o relacionamento que os usuários do sistema têm com os eventos criados pelos mesmos.</p>
  
   <details>
   <summary>Demonstração do modelo conceitual</summary>
@@ -94,7 +94,7 @@
   </details>
   
   <h3> Modelo relacional banco de dados</h3>
-  <p align="justify" style="font-family:roboto;">O modelo relacional é um tipo de modelo lógico, é também uma parte importante durante o desenvolvimento de um banco de dados completo e funcional, esse modelo apresenta uma estrutura diferente do modelo conceitual, é baseado em : Linhas, Colunas e Chave primária(PK) s e se relacionam através de chaves estrangeiras(FK), é um modelo intermediário, está localizado entre o modelo conceitual que é o primeiro passo, e o a estruturação no SGBD. Para o desenvolvimento desse modelo foi utilizado à ferramenta “Vertabelo” que é possível estruturar seu modelo relacional utilizando todas as informações necessárias.</p>
+  <p align="justify" style="font-family:roboto;">O modelo relacional é um tipo de modelo lógico, é também uma parte importante durante o desenvolvimento de um banco de dados completo e funcional, esse modelo apresenta uma estrutura diferente do modelo conceitual, é baseado em : Linhas, Colunas e Chave primária(PK) e se relacionam através de chaves estrangeiras(FK), é um modelo intermediário, está localizado entre o modelo conceitual que é o primeiro passo, e o a estruturação no SGBD. Para o desenvolvimento desse modelo foi utilizado à ferramenta “Vertabelo” que é possível estruturar seu modelo relacional utilizando todas as informações necessárias.</p>
   
   <p align="justify" style="font-family:roboto;">O desenvolvimento foi feito levando em consideração as entidades, atributos e relacionamento do conceitual, nesse novo modelo as entidades se tornam tabelas, os atributos se tornam colunas e os relacionamentos são feitos através de chaves estrangeiras, nele também ocorre a “trigramação” que é uma técnica utilizada para nomear tabelas e colunas.</p>
   
@@ -105,11 +105,11 @@
   </details>
   
   <h3> Documentação de dados</h3>
-  <p align="justify" style="font-family:roboto;">Após o desenvolvimento do modelo relacional pela ferramenta foi gerada uma documentação de dados através de um arquivo pdf, essa documentação foi entregue ao cliente, e descreve todas tabelas, colunas e relacionamento que o banco de dados possui, caso seja necessário algumas atualização na estrutura do código SQL o cliente consegue de forma fácil e rápida ter acesso a estrutura atual.</p>
+  <p align="justify" style="font-family:roboto;">Após o desenvolvimento do modelo relacional pela ferramenta foi gerada uma documentação de dados através de um arquivo pdf, essa documentação foi entregue ao cliente, e descreve todas tabelas, colunas e relacionamentos que o banco possui, caso seja necessário algumas atualização na estrutura do código SQL o cliente consegue de forma fácil e rápida ter acesso a estrutura atual.</p>
   
    <h3>Estruturação do banco de dados </h3>
-  <p align="justify" style="font-family:roboto;">Após a finalização dos modelos, foi feito a estruturação do banco de dados através do modelo relacional para linguagem SQL no banco de dados Oracle utilizando comando DML.</p>
-  <p align="justify" style="font-family:roboto;">Os códigos SQL abaixo são alguns exemplos  de códigos SQL que foram desenvolvidos durante a estruturação do banco de dados.</p>
+  <p align="justify" style="font-family:roboto;">Após a finalização dos modelos, foi feito a estruturação do banco de dados através do modelo relacional para linguagem SQL no banco de dados Oracle utilizando comandos DML.</p>
+  <p align="justify" style="font-family:roboto;">Os códigos abaixo são alguns exemplos  de códigos SQL que foram desenvolvidos durante a estruturação do banco de dados.</p>
  
    <p align="justify" style="font-family:roboto;"><b>Comando DML para criar algumas tabelas no banco de dados, atribuindo suas colunas e especificando as restrições de integridade conforme o modelo relacional</b></p>
    
@@ -154,7 +154,7 @@ CREATE TABLE Usuario (
          <br>                                                                               
     usu_nome Varchar2(80) NOT NULL,
          <br>                                        
-<b>Linha 3 (adicionando uma restrição de chave única á coluna, impossibilitando valores iguais em colunas diferentes)</b> 
+<b>Linha 3 (adicionando uma restrição de chave única á coluna, impossibilitando valores iguais)</b> 
 	  <br>
     usu_cpf Varchar2(15) CONSTRAINT uk_usuario_cpf UNIQUE NOT NULL,
          <br>                                        
@@ -208,7 +208,7 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
       <br>
   </p>
    <h3>Implementação LiquiBase. </h3>
-  <p align="justify" style="font-family:roboto;">O liquibase é uma ferramenta de migração de banco de dados de código fonte aberto que permite rastrear, gerenciar e aplicar alteração na base de dados. Essa biblioteca acabou sendo útil para fazer toda migração no banco de dados, e padronizar o banco na maquina de cada desenvolvedor do sistema. Porém com a implementação do Oracle cloud junto ao projeto, essa ferramenta parou de ser utilizada por gerar muitos conflitos, e o banco de dados foi criado dentro do próprio SQL developer.</p>
+  <p align="justify" style="font-family:roboto;">O liquibase é uma ferramenta de migração de banco de dados de código fonte aberto que permite rastrear, gerenciar e aplicar alteração na base de dados. Essa biblioteca acabou sendo útil para fazer toda migração no banco de dados, e padronizar o banco na maquina de cada desenvolvedor do sistema. Porém com o deploy do banco no Oracle Cloud junto, essa ferramenta parou de ser utilizado.</p>
   <p align="justify" style="font-family:roboto;">O primeiro passo foi adicionar a dependência da biblioteca liquibase no POM.xml do projeto</p>
   <details>
   <summary>Dependencia Liquibase no POM.xml</summary>
@@ -230,7 +230,7 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
    <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/changeset2.jpg" width="1000px;" alt=""/>
   </details>
    <h3>Implementação ORM utilizando o framework Hibernate </h3>
-   <p align="justify" style="font-family:roboto;">O Hibernate é a solução ORM Java que consiste em uma ferramenta utilizada para realizar o mapeamento objeto-relacional de forma completa e eficiente, essa tecnologia segue a especificação JPA que define um meio para realizar esse mapeamento. O hibernate é o intermediário das interações entre os objetos do aplicativo com o banco de dados relacional, fazendo assim a conversão da programação orientada a objetos para o banco de dados.</p>
+   <p align="justify" style="font-family:roboto;">O Hibernate é a solução ORM Java que consiste em uma ferramenta utilizada para realizar o mapeamento objeto-relacional de forma completa e eficiente, essa tecnologia segue a especificação JPA que define um meio para realizar esse mapeamento. O Hibernate é o intermediário das interações entre as classes Java com o banco de dados relacional, fazendo assim a conversão da programação orientada a objetos para o banco de dados relacional.</p>
   <details>
   <summary>Adicionando a dependência do hibernate</summary>
   <br>
@@ -251,9 +251,9 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
   </details>
 	    <p align="justify" style="font-family:roboto;" >Além das anotações citadas, é possível adicionar características especificas a determinada coluna. Ex:</p>
 	    <p align="justify" style="font-family:roboto;" ><b>@Column(name = "evt_titulo", nullable = false, length = 30)</b></p>
-	    <p align="justify" style="font-family:roboto;" >No trecho de código foi possível determinar o tamanho de caracteres a coluna aceita e também estabelecer que a coluna não aceita valores nulos.</p>
+	    <p align="justify" style="font-family:roboto;" >No trecho de código foi possível determinar o tamanho de caracteres que a coluna aceita estabelecer a restrição NOT NULL a coluna</p>
 	    <p align="justify" style="font-family:roboto;" ><b>@Column(name = "usu_cpf", unique = true, nullable = false, length = 15)</b></p>		 	
-  <p align="justify" style="font-family:roboto;"Nesse outro trecho foi possível estabelecer que a coluna tem uma restrição de chave única (UK).</p>
+  <p align="justify" style="font-family:roboto;">Nesse outro trecho foi possível estabelecer uma restrição de chave única (UK).</p>
 	
   <p align="justify" style="font-family:roboto;"Durante o desenvolvimento do modelo utilizado no banco de dados, verificamos diversos relacionamento com cardinalidade n:n ( muitos pra muitos) ou seja vários elementos de uma entidade A podem se relacionar com vários elementos da entidade B e vice-versa, esses relacionamentos geram no banco de dados uma tabela de ligação, que possui o atributo identificador da primeira tabela com o identificador da segunda tabela.</p>
   <p align="justify" style="font-family:roboto;"No exemplo a seguir temos um dos vários relacionamento n:n no nosso banco de dados. As tabelas são Evento e Usuário. Ou seja, um evento pode estar ligado com diversos usuários, do outro lado um usuário pode estar ligado com diversos eventos no sistema.</p>
@@ -268,13 +268,13 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
     <p align="justify" style="font-family:roboto;" >
       Na classe Usuário identificamos através do “mappedBy” que a classe é o lado dominado do relacionamento, ou seja tem função apenas de mostrar os eventos ligados aquele usuário, através da “List” chamada “eventos”.</p>
    <h3>Controle de exceção</h3>
-  <p align="justify" style="font-family:roboto;" >Durante o desenvolvimento de um API ocorrem diversos erros, o padrão do framework spring é retornar uma resposta genérica para esses erros, acarretando em diversos problemas durante o teste e desenvolvimento da aplicação, levando a uma perda de tempo enorme, que na maioria das vezes é solucionado com algo simples. Com isso foi desenvolvido um controle de algumas exceções no projeto ajudando durante o seu desenvolvimento e para sua manutenção posteriormente. A primeira validação foi utilizando a implementação Bean Validator que vem junto com hibernate, essa função nós trás algumas anotações que são utilizadas para validar os atributos das classes.</p>
+  <p align="justify" style="font-family:roboto;" >Durante o desenvolvimento de um API ocorre diversos erros durante o processo, o padrão do framework Spring é retornar uma resposta genérica para esses erros, acarretando em diversos problemas durante o teste e desenvolvimento da aplicação, levando a uma perda de tempo enorme, que na maioria das vezes é solucionado com algo simples. Com isso foi desenvolvido um controle de algumas exceções no projeto ajudando durante o seu desenvolvimento e para sua manutenção posteriormente. A primeira validação foi utilizando a implementação Bean Validator que vem junto com hibernate, essa função nós trás algumas anotações que são utilizadas para validar os atributos das classes.</p>
   
    <details>
   <summary>Controle de exceção de atributos </summary>
       <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/excecao1.jpg" width="1000px;" alt=""/>
   </details>
-	  <p align="justify" style="font-family:roboto;">Levando como exemplo a classe Usuário verificamos a utilização da anotação @NotBlank que informa ao spring que aquele atributo não pode estar vazio, outra anotação é @Email que verifica se o atributo “email” está em seu formato correto.</p>
+	  <p align="justify" style="font-family:roboto;">Levando como exemplo a classe Usuário verificamos a utilização da anotação @NotBlank que informa ao Spring que aquele atributo não pode estar vazio, outra anotação é @Email que verifica se o atributo “email” está em seu formato correto.</p>
 	
   <details>
   <summary>Personalização de mensagens</summary>
@@ -297,8 +297,8 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
   </details>
 	
  <h3>Controle de exceção utilizando ExeceptionHandler </h3>
-   <p align="justify" style="font-family:roboto;">Outra controle de execeção utilizado foi desenvolvido atráves do ExceptionHandler utilizada para tratar algumas exceções especificas do sistema e retornar a mensagem ao usuário.</p>
- <p align="justify" style="font-family:roboto;">Para isso foi criado uma classe chamada “RestExceptionHandler” que captura as exceções que foram lançadas e faz o tratamento, essa classe estende uma outra classe do spring chamada “ResponseEntityExceptionHandler”  que fornece para nós os métodos para tratar exceções interna no spring. A anotação @ControlleAdvice é uma anotação que lida com as exceções globalmente e a @ExceptionHandler é utilizada para tratar as exceções especificas.</p>
+   <p align="justify" style="font-family:roboto;">Outra controle de execeção foi desenvolvido atráves do ExceptionHandler</p>
+ <p align="justify" style="font-family:roboto;">Para isso foi criado uma classe chamada “RestExceptionHandler” que captura as exceções que foram lançadas e faz o tratamento, essa classe herda uma outra classe do spring chamada “ResponseEntityExceptionHandler”  que fornece para nós os métodos para tratar exceções internas no Spring. A anotação @ControlleAdvice é uma anotação que lida com as exceções globalmente e a @ExceptionHandler é utilizada para tratar as exceções especificas.</p>
    
   <details>
   <summary> Classe RestExceptionHandler</summary>
@@ -315,7 +315,7 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
   <li>Metodologia Ágil Scrum
   <ul>
     <li>Criação do Product Backlog do projeto utilizando o método Product Backlog Building;</li>
-    <li>Criação das user stories para o desenvolvimento da aplicação.</li>
+    <li>Criação das User Stories para o desenvolvimento da aplicação.</li>
     </ul></li>
   <li>Framework Spring Boot:
   <ul>
