@@ -222,11 +222,11 @@ O mapeamento das classes é construído através de algumas tags especificas do 
     <br>
 	  <b>@Table – Notação para especificar qual o nome da tabela no banco de dados.</b>
     <br>
-	  <b>@Column – Identifica o nome da coluna </b>
+	  <b>@Column – Identifica o nome da coluna. </b>
     <br>
-	@Id – Identifica a “primary key”, ou seja, a coluna identificadora da tabela
+	  <b>@Id – Identifica a “primary key”, ou seja, a coluna identificadora da tabela.</b>
     <br>
-	@SequenceGenerator – Cria uma sequencia de números no banco de dados
+	  <b>@SequenceGenerator – Cria uma sequencia de números no banco de dados.</b>
     <br>
 </p>
   <details>
@@ -261,9 +261,9 @@ O mapeamento das classes é construído através de algumas tags especificas do 
   <br>
       <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/excecao1.jpg" width="1000px;" alt=""/>
   </details>
-  
-    <p align="justify" style="font-family:roboto;">Levando como exemplo a classe Usuário verificamos a utilização da anotação @NotBlank que informa ao spring que aquele atributo não pode estar vazio, outra anotação é @Email que verifica se o atributo “email” está em seu formato correto.</p>
-  
+	
+	<p align="justify" style="font-family:roboto;">Levando como exemplo a classe Usuário verificamos a utilização da anotação @NotBlank que informa ao spring que aquele atributo não pode estar vazio, outra anotação é @Email que verifica se o atributo “email” está em seu formato correto.</p>
+	
   <details>
   <summary>Personalização de mensagens</summary>
   <br>
@@ -284,7 +284,7 @@ O mapeamento das classes é construído através de algumas tags especificas do 
   <br>
       <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/exececao3.jpg" width="1000px;" alt=""/>
   </details>
- <h3>Controle de exceção utilizando ExecptionHandler </h3>
+ <h3>Controle de exceção utilizando ExeceptionHandler </h3>
    <p align="justify" style="font-family:roboto;">Outra controle de execeção utilizado foi desenvolvido atráves do ExceptionHandler utilizada para tratar algumas exceções especificas do sistema e retornar a mensagem ao usuário.</p>
  <p align="justify" style="font-family:roboto;">Para isso foi criado uma classe chamada “RestExceptionHandler” que captura as exceções que foram lançadas e faz o tratamento, essa classe estende uma outra classe do spring chamada “ResponseEntityExceptionHandler”  que fornece para nós os métodos para tratar exceções interna no spring. A anotação @ControlleAdvice é uma anotação que lida com as exceções globalmente e a @ExceptionHandler é utilizada para tratar as exceções especificas.</p>
    
