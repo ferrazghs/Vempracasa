@@ -218,17 +218,16 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
    <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/hibernate.jpg" width="1000px;" alt=""/>
   </details>
   <p align="justify" style="font-family:roboto;">
-O mapeamento das classes é construído através de algumas tags especificas do Hibernate, através desses dois exemplos acima conseguimos identificar tags chaves para o mapeamento, são elas:
-    <br>
-	  <b>@Table – Notação para especificar qual o nome da tabela no banco de dados.</b>
-    <br>
-	  <b>@Column – Identifica o nome da coluna. </b>
-    <br>
-	  <b>@Id – Identifica a “primary key”, ou seja, a coluna identificadora da tabela.</b>
-    <br>
-	  <b>@SequenceGenerator – Cria uma sequencia de números no banco de dados.</b>
-    <br>
-</p>
+O mapeamento das classes é construído através de algumas tags especificas do Hibernate, através desses dois exemplos acima conseguimos identificar tags chaves para o mapeamento, são elas:</p>
+	
+	<ul> 
+	     <li>@Table – Notação para especificar qual o nome da tabela no banco de dados;</li> 
+	     <li>@Column – Identifica o nome da coluna;</li
+             <li>@Id – Identifica a “primary key”, ou seja, a coluna identificadora da tabela;</li>
+             <li>@SequenceGenerator – Cria uma sequencia de números no banco de dados.</li>
+
+	</ul></li>
+	
   <details>
   <summary>Exemplo mapeamento de classes</summary>
   <br>
@@ -237,9 +236,17 @@ O mapeamento das classes é construído através de algumas tags especificas do 
     <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/orm2.jpg" width="1000px;" alt=""/>
   </details>-
   <p align="justify" style="font-family:roboto;">Além das anotações citadas, é possível adicionar características especificas a determinada coluna. Ex:</p>
-  <p align="justify" style="font-family:roboto;"><b>@Column(name = "evt_titulo", nullable = false, length = 30)</b></p>
+	
+	<ul> 
+	     <li>@Column(name = "evt_titulo", nullable = false, length = 30)</li> 
+	</ul></li>
+	
   <p align="justify" style="font-family:roboto;">No trecho de código foi possível determinar o tamanho de caracteres a coluna aceita e também estabelecer que a coluna não aceita valores nulos.</p>
-  <p align="justify" style="font-family:roboto;"><b>@Column(name = "usu_cpf", unique = true, nullable = false, length = 15)</b></p>
+  
+  	<ul> 
+	     <li>@Column(name = "usu_cpf", unique = true, nullable = false, length = 15)</li> 
+	</ul></li>
+	
   <p align="justify" style="font-family:roboto;"Nesse outro trecho foi possível estabelecer que a coluna tem uma restrição de chave única (UK).</p>
   <p align="justify" style="font-family:roboto;"Durante o desenvolvimento do modelo utilizado no banco de dados, verificamos diversos relacionamento com cardinalidade n:n ( muitos pra muitos) ou seja vários elementos de uma entidade A podem se relacionar com vários elementos da entidade B e vice-versa, esses relacionamentos geram no banco de dados uma tabela de ligação, que possui o atributo identificador da primeira tabela com o identificador da segunda tabela.</p>
   <p align="justify" style="font-family:roboto;"No exemplo a seguir temos um dos vários relacionamento n:n no nosso banco de dados. As tabelas são Evento e Usuário. Ou seja, um evento pode estar ligado com diversos usuários, do outro lado um usuário pode estar ligado com diversos eventos no sistema.</p>
@@ -301,19 +308,19 @@ O mapeamento das classes é construído através de algumas tags especificas do 
   <li>Metodologia Ágil Scrum
   <ul>
     <li>Criação do Product Backlog do projeto utilizando o método Product Backlog Building;</li>
-    <li>Criação das user stories para o desenvolvimento da aplicação;</li>
+    <li>Criação das user stories para o desenvolvimento da aplicação.</li>
     </ul></li>
   <li>Framework Spring Boot:
   <ul>
     <li>Mapeamento das classes e relacionamento de objetos utilizando Hibernate;</li> 
     <li>Arquitetura com Repository, Service, Model e Controller;</li>
-    <li>Desenvolvimento do controle de exceções utilizando ExceptionHandler e BeanValidation;</li> 
+    <li>Desenvolvimento do controle de exceções utilizando ExceptionHandler e BeanValidation.</li> 
     </ul></li>
   <li>Banco de dados:
   <ul>
     <li>Desenvolvimento do modelo conceitual do banco de dados atendendo os requisitos do cliente;</li>
-    <li>Estruturação e configuração do Oracle SQLdeveloper</li>   
-    <li>Programação via SQL do banco de dados</li>   
+    <li>Estruturação e configuração do Oracle SQLdeveloper;</li>   
+    <li>Programação via SQL do banco de dados.</li>   
     </ul></li>
     </ul>
   ---
