@@ -45,7 +45,6 @@
    
   * [Java](https://www.java.com/pt_BR/)
 <p align="justify" style="font-family:roboto;"> O Java é uma linguagem de programação orientada a objetos. Foi utilizada durante o desenvolvimento do back-end do projeto. Por conta dos integrantes do grupo já possuírem um conhecimento prévio no desenvolvimento baseado nessa linguagem, ela é muita utilizada no mercado de trabalho, além de possuir uma extensa documentação, facilitando o desenvolvimento do projeto.</p>
-  <br>
   * [Spring Boot](https://spring.io/)
   <p align="justify" style="font-family:roboto;">Spring boot é um framework Java open-source que facilita o desenvolvimento de aplicações baseadas em Java, tornando o desenvolvimento mais rápido e dinâmico. Além de possuir diversas funcionalidades, o recurso foi utilizado durante o projeto para fazer a configuração de todas as bibliotecas que foram utilizadas, tornando o desenvolvimento mais rápido, além de um código fonte mais limpo. O framework foi escolhido pois ele facilita durante o desenvolvimento de projetos, fazendo com que os programadores se preocupem apenas com a implementação das regras de negocio.</p>
   * [JavaScript](https://www.javascript.com/)
