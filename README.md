@@ -173,7 +173,7 @@ CREATE TABLE Usuario_Evento (
       <br>
 ) ;
   </p>
-  <p align="justify" style="font-family:roboto;"><<b>Especificação das chaves estrangeiras da tabela Usuario_Evento, referenciando as tabelas de origem.</b></p>
+  <p align="justify" style="font-family:roboto;"><b>Especificação das chaves estrangeiras da tabela Usuario_Evento, referenciando as tabelas de origem.</b></p>
     <p align="justify" style="font-family:roboto;">
 ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_evt_id
       <br>
@@ -188,62 +188,116 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
     REFERENCES Usuario (usu_email);
       <br>
   </p>
+   <h3>Implementação LiquiBase. </h3>
+  <p align="justify" style="font-family:roboto;">O liquibase é uma ferramenta de migração de banco de dados de código fonte aberto que permite rastrear, gerenciar e aplicar alteração na base de dados. Essa biblioteca acabou sendo útil para fazer toda migração no banco de dados, e padronizar o banco na maquina de cada desenvolvedor do sistema. Porém com a implementação do Oracle cloud junto ao projeto, essa ferramenta parou de ser utilizada por gerar muitos conflitos, e o banco de dados foi criado dentro do próprio SQL developer.</p>
+  <p align="justify" style="font-family:roboto;">O primeiro passo foi adicionar a dependência da biblioteca liquibase no POM.xml do projeto</p>
   <details>
-  <summary>Entidade Model</summary>
+  <summary>Dependencia Liquibase no POM.xml</summary>
   <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Model-1.png" width="800px;" alt=""/>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/liquibase.jpg" width="1000px;" alt=""/>
   </details>
+  <p align="justify" style="font-family:roboto;">Após a configuração do POM, é criado um arquivo em resources -> db -> changelog onde é feito a configuração do diretório onde será armazenado as migrações no banco de dados.</p>
   <details>
-  <summary>Relações ManyToMany e ManyToOne Mapeadas</summary>
+  <summary>Criação do changelog</summary>
   <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Model-2.png" width="800px;" alt=""/>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/changelog.jpg" width="1000px;" alt=""/>
+  </details>
+  <p align="justify" style="font-family:roboto;"> Após o changelog, é criado um arquivo “.sql” para adicionar as migrações, cada alteração no banco de dados é chamada de changeset, onde é possível atribuir um id, que deve ser diferente em cada alteração, e o autor daquela migração.</p>
+  <details>
+  <summary>Arquivo changeset</summary>
+  <br>
+   <img style="border-radius: 50%;" src=https://github.com/ferrazghs/Vempracasa/blob/main/images/changeset1.jpg" width="1000px;" alt=""/>
+      <br>
+   <img style="border-radius: 50%;" src=https://github.com/ferrazghs/Vempracasa/blob/main/images/changeset2.jpg" width="1000px;" alt=""/>
+  </details>
+   <h3>Implementação ORM utilizando o framework Hibernate </h3>
+   <p align="justify" style="font-family:roboto;">O Hibernate é a solução ORM Java que consiste em uma ferramenta utilizada para realizar o mapeamento objeto-relacional de forma completa e eficiente, essa tecnologia segue a especificação JPA que define um meio para realizar esse mapeamento. O hibernate é o intermediário das interações entre os objetos do aplicativo com o banco de dados relacional, fazendo assim a conversão da programação orientada a objetos para o banco de dados.</p>
+  <details>
+  <summary>Adicionando a dependência do hibernate</summary>
+  <br>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/hibernate.jpg" width="1000px;" alt=""/>
+  </details>
+  <p align="justify" style="font-family:roboto;">
+O mapeamento das classes é construído através de algumas tags especificas do Hibernate, através desses dois exemplos acima conseguimos identificar tags chaves para o mapeamento, são elas:
+    <br>
+•	@Table – Notação para especificar qual o nome da tabela no banco de dados.
+    <br>
+•	@Column – Identifica o nome da coluna 
+    <br>
+•	@Id – Identifica a “primary key”, ou seja, a coluna identificadora da tabela
+    <br>
+•	@SequenceGenerator – Cria uma sequencia de números no banco de dados
+    <br>
+</p>
+  <details>
+  <summary>Exemplo mapeamento de classes</summary>
+  <br>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/orm1.jpg" width="1000px;" alt=""/>
+    <br>
+    <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/orm2.jpg" width="1000px;" alt=""/>
+  </details>-
+  <p align="justify" style="font-family:roboto;">Além das anotações citadas, é possível adicionar características especificas a determinada coluna. Ex:</p>
+  <p align="justify" style="font-family:roboto;"><b>@Column(name = "evt_titulo", nullable = false, length = 30)</b></p>
+  <p align="justify" style="font-family:roboto;">No trecho de código foi possível determinar o tamanho de caracteres a coluna aceita e também estabelecer que a coluna não aceita valores nulos.</p>
+  <p align="justify" style="font-family:roboto;"><b>@Column(name = "usu_cpf", unique = true, nullable = false, length = 15)</b></p>
+  <p align="justify" style="font-family:roboto;"Nesse outro trecho foi possível estabelecer que a coluna tem uma restrição de chave única (UK).</p>
+  <p align="justify" style="font-family:roboto;"Durante o desenvolvimento do modelo utilizado no banco de dados, verificamos diversos relacionamento com cardinalidade n:n ( muitos pra muitos) ou seja vários elementos de uma entidade A podem se relacionar com vários elementos da entidade B e vice-versa, esses relacionamentos geram no banco de dados uma tabela de ligação, que possui o atributo identificador da primeira tabela com o identificador da segunda tabela.</p>
+  <p align="justify" style="font-family:roboto;"No exemplo a seguir temos um dos vários relacionamento n:n no nosso banco de dados. As tabelas são Evento e Usuário. Ou seja, um evento pode estar ligado com diversos usuários, do outro lado um usuário pode estar ligado com diversos eventos no sistema.</p>
+  <details>
+  <summary>Implementação relacionamento n:n </summary>
+  <br>
+   <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/manytomany1.jpg" width="1000px;" alt=""/>
+    <br>
+      <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/manytomany2.jpg" width="1000px;" alt=""/>
+  </details>
+    <p align="justify" style="font-family:roboto;" >No mapeamento utilizamos a anotação @ManytoMany par a identificar um relacionamento muito pra muitos, após isso foi escolhido a classe que identificar a classe dominante no relacionamento, que nesse caso é a classe Evento, com isso através da anotação @JoinTable identificamos o nome da tabela de relacionamento, em “joinColumns “ informamos o nome da coluna identificadora da classe dominante (Evento) e em ”inverseJoinColumns” informamos o identificador da outra classe (Usuário).</p>
+    <p align="justify" style="font-family:roboto;" >
+      Na classe Usuário identificamos através do “mappedBy” que a classe é o lado dominado do relacionamento, ou seja tem função apenas de mostrar os eventos ligados aquele usuário, através da “List” chamada “eventos”.</p>
+   <h3>Controle de exceção</h3>
+  <p align="justify" style="font-family:roboto;" >Durante o desenvolvimento de um API ocorrem diversos erros, o padrão do framework spring é retornar uma resposta genérica para esses erros, acarretando em diversos problemas durante o teste e desenvolvimento da aplicação, levando a uma perda de tempo enorme, que na maioria das vezes é solucionado com algo simples. Com isso foi desenvolvido um controle de algumas exceções no projeto ajudando durante o seu desenvolvimento e para sua manutenção posteriormente. A primeira validação foi utilizando a implementação Bean Validator que vem junto com hibernate, essa função nós trás algumas anotações que são utilizadas para validar os atributos das classes.</p>
+  
+   <details>
+  <summary>Controle de exceção de atributos </summary>
+  <br>
+      <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/excecao1.jpg" width="1000px;" alt=""/>
   </details>
   
-  <p align="justify" style="font-family:roboto;"> Os Repositories são interfaces que tem como função serem camadas de acesso a dados. Eles extendem o JpaRepository, portanto há um melhor e mais fácil acesso aos métodos de manipulação dos dados na Database, sendo inserção (save), consulta (listAll), atualização (save) e deleção (deleteById) os que utilizamos no desenvolvimento. Além de permitirem realizar comandos SQL customizados de acordo com a necessidade da funcionalidade.</p>
-  <details>
-  <summary>Repository</summary>
-  <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Repository.png" width="800px;" alt=""/>
-  </details>
+    <p align="justify" style="font-family:roboto;">Levando como exemplo a classe Usuário verificamos a utilização da anotação @NotBlank que informa ao spring que aquele atributo não pode estar vazio, outra anotação é @Email que verifica se o atributo “email” está em seu formato correto.</p>
   
-  <p align="justify" style="font-family:roboto;"> Os Services são classes que concentram os métodos do Repository, visto que tem essa interface injetada com a anotação @Autowired. Sendo adicionados neles a lógica essencial para regra de negócio imposta pelo cliente, como por exemplo o envio de e-mails, além de contribuirem muito para organização dos métodos utilizados pela interface.</p>
   <details>
-  <summary>Service</summary>
+  <summary>Personalização de mensagens</summary>
   <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Service.png" width="800px;" alt=""/>
+      <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/excecao2.jpg" width="1000px;" alt=""/>
   </details>
+    
+    <p align="justify" style="font-family:roboto;">Para personalizar as mensagens que serão mostradas, foi criado um arquivo em “resources” chamado ValidationMessages.properties, esse nome é utilizado pelo spring para verificar se existe uma mensagem caso a validação falhar, caso a validação não possua mensagem personalizada será mostrado a padrão, no arquivo criado identificamos as mensagens personalizadas, após isso identificamos na anotação @NotBlank ou @Email o id dessa mensagem, como no exemplo a seguir:</p>
   
-  <p align="justify" style="font-family:roboto;"> Os Controllers são as classes onde se encontram os Endpoints do Back-End que serão utilizados para interação com o Front-End, isso corre pela chamada de rotas presentes em seus métodos, pela anotação @RequestMapping("/rota-exemplo"). Ademais, contém os Services necessários injetados com a anotação @Autowired e utiliza das chamadas dos métodos dessas classes para realização da lógica desenvolvida.</p>
+     <p align="justify" style="font-family:roboto;
+@NotBlank(message = "{email.not.blank}")
+ <br>
+@Email(message = "{email.not.valid}")
+</p>
+                                    
+     <p align="justify" style="font-family:roboto;">Na classe controller da aplicação utilizamos a anotação @Valid nas requisições para verificar esses atributos.</p>
   <details>
-  <summary>Controller</summary>
+  <summary>Anotação @Valid</summary>
   <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Controller.png" width="800px;" alt=""/>
+      <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/exececao3.jpg" width="1000px;" alt=""/>
   </details>
-  
-   <p align="justify" style="font-family:roboto;"> Após explicada a estrura aplicada no projeto, foi necessário realizar uma configuração de Cors, ao passo que verificam a real origem, métodos HTTP e cabeçalhos de uma determinada solicitação enviada para o Back-End. Sendo fundamental para conexão com o Front-End, ao passo que permite que a rota utilizada no Angular consiga fazer requisições e receber suas respostas.</p>
-  <details>
-  <summary>Configuração dos Cors</summary>
-  <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Config-Cors.png" width="800px;" alt=""/>
-  </details>
-  
-  <p align="justify" style="font-family:roboto;"> A seguir foram configuradas as Properties, na qual foi aplicada a conexão com a Base de Dados Oracle que está em
-  nuvem no Oracle Cloud, por meio do sistema de Wallet. Além de declarar: o driver utilizado (oracle.jdbc.OracleDriver), a versão da linguagem do Banco (Oracle12cDialect), a maneira que o hibernate vai ler os Models (validate) e a porta que será rodado o serviço (PORT:8080).</p>
-  <details>
-  <summary>Properties</summary>
-  <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Properties-VPC.png" width="800px;" alt=""/>
-  </details>
-  
-  <p align="justify" style="font-family:roboto;"> Por fim, colaborei com o deploy do Front-End no Heroku, por meio do método manual usando uma branch do GitHub do projeto. Com isso o sistema ficou 100% hospedado em nuvem e disponível pelo seguinte link: <a href="http://vempracasa.herokuapp.com/">#VEMPRACASA</a></p>
-  <details>
-  <summary>Heroku</summary>
-  <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Heroku.png" width="1000px;" alt=""/>
-  </details>
-  
-  ---
+ <h3>Controle de exceção utilizando ExecptionHandler </h3>
+   <p align="justify" style="font-family:roboto;">Outra controle de execeção utilizado foi desenvolvido atráves do ExceptionHandler utilizada para tratar algumas exceções especificas do sistema e retornar a mensagem ao usuário.</p>
+ <p align="justify" style="font-family:roboto;">Para isso foi criado uma classe chamada “RestExceptionHandler” que captura as exceções que foram lançadas e faz o tratamento, essa classe estende uma outra classe do spring chamada “ResponseEntityExceptionHandler”  que fornece para nós os métodos para tratar exceções interna no spring. A anotação @ControlleAdvice é uma anotação que lida com as exceções globalmente e a @ExceptionHandler é utilizada para tratar as exceções especificas.</p>
    
+  <details>
+  <summary> Classe RestExceptionHandler</summary>
+  <br>
+      <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/excecao4.jpg" width="1000px;" alt=""/>
+                                                                                                                                         <br>
+       <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/excecao5.jpg" width="1000px;" alt=""/>
+                                                                  
+  </details>
+
+                                                                                                                                         
   <h2 style="font-family:roboto;"> Aprendizados Efetivos :book:</h2>   
   
   ---
