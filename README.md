@@ -26,7 +26,7 @@
   
   <h2 style="font-family:roboto;"> Descrição do Projeto :clipboard:</h2>
   
-  <p align="justify" style="font-family:roboto;"> :calendar: <b>#VEMPRACASA</b> é uma parceria entre a <a href="https://www.oracle.com/br/index.html">Oracle</a> e a FATEC São José dos campos, a proposta apresentada pela a empresa parceira tem a finalidade no desenvolvimento de um sistema que realiza agendamentos de eventos nos espaços da Casa Oracle, o sistema tem o intuito de solucionar um problema recorrente que a empresa possuía no agendamento manual dos eventos..</p>
+  <p align="justify" style="font-family:roboto;"> :calendar: <b>#VEMPRACASA</b> é uma parceria entre a <a href="https://www.oracle.com/br/index.html">Oracle</a> e a FATEC São José dos campos, a proposta apresentada pela a empresa parceira tem a finalidade do desenvolvimento de um sistema que realiza agendamentos de eventos nos espaços da Casa Oracle, o sistema tem o intuito de solucionar um problema recorrente que a empresa possuía no agendamento manual dos eventos..</p>
   
   <p align="justify" style="font-family:roboto;"> O sistema tem diversas funcionalidades que tornam o agendamento de eventos algo intuitivo e prático para o usuário final, foi inteiramente desenvolvido utilizando a metodologia ágil Scrum. No aplicativo temos três tipos de usuários que consistem em: Organizador, Administrador, Convidado.</p>
 
