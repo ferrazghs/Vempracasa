@@ -173,8 +173,7 @@ CREATE TABLE Usuario_Evento (
       <br>
 ) ;
   </p>
-
-  <p align="justify" style="font-family:roboto;"><b<Especificação das chaves estrangeiras da tabela Usuario_Evento, referenciando as tabelas de origem.</b></p>
+  <p align="justify" style="font-family:roboto;"><<b>Especificação das chaves estrangeiras da tabela Usuario_Evento, referenciando as tabelas de origem.</b></p>
     <p align="justify" style="font-family:roboto;">
 ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_evt_id
       <br>
