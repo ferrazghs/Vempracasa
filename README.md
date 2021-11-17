@@ -217,8 +217,14 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
   <br>
    <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/hibernate.jpg" width="1000px;" alt=""/>
   </details>
-  <p align="justify" style="font-family:roboto;">
-O mapeamento das classes é construído através de algumas tags especificas do Hibernate, através desses dois exemplos acima conseguimos identificar tags chaves para o mapeamento, são elas:</p>
+	
+	    <p align="justify" style="font-family:roboto;" >O mapeamento das classes é construído através de algumas tags especificas do Hibernate, através desses dois exemplos acima conseguimos identificar tags chaves para o mapeamento, são elas:</p>
+	    <p align="justify" style="font-family:roboto;" ><b>@Table – Notação para especificar qual o nome da tabela no banco de dados;</b></p>
+	    <p align="justify" style="font-family:roboto;" ><b>@Column – Identifica o nome da coluna;</b></p>		 	
+            <p align="justify" style="font-family:roboto;" ><b>@Id – Identifica a “primary key”, ou seja, a coluna identificadora da tabela;</b></p>		 	
+	    <p align="justify" style="font-family:roboto;" ><b>@SequenceGenerator – Cria uma sequencia de números no banco de dados.</b></p>		 	
+
+	
 
 	    <p align="justify" style="font-family:roboto;" > <b>@Table – Notação para especificar qual o nome da tabela no banco de dados;</b> </p>
 	    <p align="justify" style="font-family:roboto;" ><b>@Column – Identifica o nome da coluna;</b></p>		 	
