@@ -235,17 +235,7 @@ O mapeamento das classes é construído através de algumas tags especificas do 
     <br>
     <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/orm2.jpg" width="1000px;" alt=""/>
   </details>
-	
-	    <li>
-Além das anotações citadas, é possível adicionar características especificas a determinada coluna.        
-	 <ul>
-            <li>
-		@Column(name = "evt_titulo", nullable = false, length = 30)           
-           </li>
-        </ul>
-    </li>
-	
-  <p align="justify" style="font-family:roboto;"Além das anotações citadas, é possível adicionar características especificas a determinada coluna. Ex:</p>	
+	    <p align="justify" style="font-family:roboto;" >Além das anotações citadas, é possível adicionar características especificas a determinada coluna. Ex:</p>
 	
      <p align="justify" style="font-family:roboto;"@Column(name = "evt_titulo", nullable = false, length = 30)"</p> 
 	  
