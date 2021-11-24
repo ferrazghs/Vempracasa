@@ -231,8 +231,9 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
   </details>
    <h3>Implementação ORM utilizando o framework Hibernate </h3>
    <p align="justify" style="font-family:roboto;">O Hibernate é a solução ORM Java que consiste em uma ferramenta utilizada para realizar o mapeamento objeto-relacional de forma completa e eficiente, essa tecnologia segue a especificação JPA que define um meio para realizar esse mapeamento. O Hibernate é o intermediário das interações entre as classes Java com o banco de dados relacional, fazendo assim a conversão da programação orientada a objetos para o banco de dados relacional. Durante o desenvolvimento do projeto foi utilizado a arquitetura Modelo-Visão-Controle (MVC) onde separamos através de uma lógica arquitetural o sistema em componentes interligados, onde é possivel definir a conexão com a camada de dados, interação com o usuário e as regras de negócio.</p>
+	
   <p align="justify" style="font-family:roboto;">A lógica arquitetura implementada consistem em :</p>
-        <li>Model - Representação das tabelas do banco de dados, onde foi definido as relações entre objetos e seus atributos, foi utilizado o método ORM para mapear essas classes.<li>
+        <li>Model - Representação das tabelas do banco de dados, onde foi definido as relações entre objetos e seus atributos, foi utilizado o método ORM para mapear essas classes.</li>
 	<li>Repository - São interfaces Java que tem como principal função serem a camada de acesso a dados, durante seu desenvolvimento foi utilizado o padrão de projeto Facade pois é uma interface que simplifica as funcionalidades do JPA.  </li>
 	<li>Services - São classes que possuem os métodos do Repository, é onde são mantidos as lógicas conforme as regras de negócio conforme a requisição do cliente.</li>
 	<li>Controller - É a classe onde encontramos os endpoints utilizado para a interação com o front-end do projeto, a comunicação ocorre entre requisições HTTP presentes nas rotas do Controller, para essas requições utilizamos o padrão de projeto Proxy onde controlamos o acesso aos objetos nas com as anotações do Spring.</li>
