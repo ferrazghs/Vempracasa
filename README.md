@@ -230,7 +230,8 @@ ALTER TABLE Usuario_Evento ADD CONSTRAINT fk_usuario_evento_usu_email
    <img style="border-radius: 50%;" src="https://github.com/ferrazghs/Vempracasa/blob/main/images/changeset2.jpg" width="1000px;" alt=""/>
   </details>
    <h3>Implementação ORM utilizando o framework Hibernate </h3>
-   <p align="justify" style="font-family:roboto;">O Hibernate é a solução ORM Java que consiste em uma ferramenta utilizada para realizar o mapeamento objeto-relacional de forma completa e eficiente, essa tecnologia segue a especificação JPA que define um meio para realizar esse mapeamento. O Hibernate é o intermediário das interações entre as classes Java com o banco de dados relacional, fazendo assim a conversão da programação orientada a objetos para o banco de dados relacional.</p>
+   <p align="justify" style="font-family:roboto;">O Hibernate é a solução ORM Java que consiste em uma ferramenta utilizada para realizar o mapeamento objeto-relacional de forma completa e eficiente, essa tecnologia segue a especificação JPA que define um meio para realizar esse mapeamento. O Hibernate é o intermediário das interações entre as classes Java com o banco de dados relacional, fazendo assim a conversão da programação orienttrada a objetos para o banco de dados relacional. Durante o desenvolvimento do projeto foi utilizado a arquitetura Modelo-Visão-Controle conhecida como MVC onde separamos através de uma lógica arquitetural separamos o sistema em componentes interligados .</p>
+   <p align="justify" style="font-family:roboto;">Para realizar o mapeamento objeto-relacional foi utilizado o Model que consiste na representação das tabelas do banco de dados, onde é possivel definir as relações entre as tabelas e seus atributos.</p>
   <details>
   <summary>Adicionando a dependência do hibernate</summary>
   <br>
